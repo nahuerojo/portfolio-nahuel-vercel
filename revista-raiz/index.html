@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Raíz — Revista digital, Edición 01 · Nahuel Gonzalez</title>
+<meta name="description" content="Ejercicio de diseño editorial digital: revista de 8 pantallas para una marca ficticia de alimentos naturales.">
+<meta name="theme-color" content="#f5f1ea">
+<meta property="og:title" content="Raíz — Revista digital, Edición 01">
+<meta property="og:description" content="Diseño editorial digital con marca ficticia. Portfolio de Nahuel Gonzalez.">
+<meta property="og:image" content="https://nahuegnz.vercel.app/revista-raiz/preview/raiz-tarjeta-portfolio.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f1ea;--ink:#1f1b16;--muted:#6b6259;--green:#2f5d3a;--orange:#d9822b;--line:#e2dacc}
+*{box-sizing:border-box;margin:0}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.top{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;border-bottom:1px solid var(--line)}
+.back{font-size:14px;text-decoration:none;color:var(--muted)}
+.back:hover{color:var(--ink)}
+.brand{font-family:'Playfair Display',serif;font-weight:700;letter-spacing:.02em}
+.wrap{display:grid;grid-template-columns:minmax(0,1fr) 420px minmax(0,1fr);gap:48px;align-items:center;max-width:1280px;margin:0 auto;padding:28px 24px;min-height:calc(100dvh - 55px)}
+.info{max-width:340px;justify-self:end}
+.tag{display:inline-block;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);font-weight:600;margin-bottom:14px}
+h1{font-family:'Playfair Display',serif;font-size:40px;line-height:1.1;margin-bottom:14px}
+h1 em{color:var(--orange);font-style:italic}
+.info p{color:var(--muted);line-height:1.6;font-size:15px;margin-bottom:12px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.btn{font:600 14px Inter,sans-serif;text-decoration:none;padding:11px 18px;border-radius:999px;border:1px solid var(--ink);background:var(--ink);color:#fff}
+.btn.alt{background:transparent;color:var(--ink)}
+.btn:hover{opacity:.85}
+.stage{display:flex;flex-direction:column;align-items:center;gap:14px}
+.phone{width:390px;max-width:100%;height:min(780px,calc(100dvh - 170px));border-radius:38px;border:10px solid #1f1b16;overflow:hidden;background:#fff;box-shadow:0 30px 60px -20px rgba(40,30,20,.35);position:relative}
+.phone iframe{width:100%;height:100%;border:0;display:block;opacity:1;transition:opacity .2s}
+.phone iframe.fade{opacity:0}
+.nav{display:flex;align-items:center;gap:14px}
+.nav button{width:42px;height:42px;border-radius:50%;border:1px solid var(--ink);background:transparent;font-size:18px;cursor:pointer;color:var(--ink)}
+.nav button:hover:not(:disabled){background:var(--ink);color:#fff}
+.nav button:disabled{opacity:.3;cursor:default}
+.count{font-size:14px;min-width:74px;text-align:center;font-weight:600}
+.dots{display:flex;gap:7px}
+.dots i{width:7px;height:7px;border-radius:50%;background:#cfc6b6;cursor:pointer}
+.dots i.on{background:var(--green);transform:scale(1.25)}
+.toc{justify-self:start;max-width:300px;width:100%}
+.toc h2{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;font-weight:600}
+.toc ol{list-style:none;padding:0}
+.toc li{border-bottom:1px solid var(--line)}
+.toc a{display:flex;gap:12px;padding:11px 0;text-decoration:none;font-size:15px;cursor:pointer}
+.toc a span{color:var(--orange);font-family:'Playfair Display',serif;font-weight:700;width:22px}
+.toc a.on{color:var(--green);font-weight:600}
+.note{margin-top:18px;font-size:12.5px;line-height:1.55;color:var(--muted)}
+@media (max-width:1100px){.wrap{grid-template-columns:1fr;justify-items:center;gap:28px}.info,.toc{justify-self:center;max-width:420px}.toc{order:3}}
+@media (max-width:640px){
+ .top{padding:10px 16px}
+ .wrap{padding:0;gap:0;display:block;min-height:0}
+ .info,.toc{display:none}
+ .stage{gap:0;width:100%;max-width:none}
+ .phone{width:100%;height:calc(100dvh - 55px - 64px);border:0;border-radius:0;box-shadow:none}
+ .nav{width:100%;justify-content:space-between;padding:10px 16px;height:64px;background:var(--bg);border-top:1px solid var(--line)}
+ .dots{display:none}
+ .mobile-links{display:flex!important}
+}
+.mobile-links{display:none;gap:14px;font-size:13px}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="back" href="/#produccion">← Volver al portfolio</a>
+  <span class="brand">Nahuel Gonzalez</span>
+  <span class="mobile-links"><a href="Raiz-Edicion-01.pdf" download>PDF</a></span>
+</header>
+
+<main class="wrap">
+  <section class="info">
+    <span class="tag">Diseño editorial digital</span>
+    <h1>Raíz, <em>Edición 01</em></h1>
+    <p>Revista digital de 8 pantallas pensada para leer en el celular, para una marca ficticia de alimentos naturales. Incluye portada, editorial, nota larga, infografía, dos recetas, un módulo de producto y cierre.</p>
+    <p>Trabajé la estructura, los textos y el sistema de diseño (grilla, tipografía, paleta y plantillas). La base visual y las fotos se generaron con herramientas de IA (Stitch) y las ajusté después.</p>
+    <div class="btns">
+      <a class="btn" href="Raiz-Edicion-01.pdf" download>Descargar PDF</a>
+      <a class="btn alt" href="paginas/09-newsletter.html" target="_blank" rel="noopener">Ver versión newsletter</a>
+    </div>
+  </section>
+
+  <section class="stage">
+    <div class="phone"><iframe id="frame" title="Revista Raíz" src="paginas/01-portada.html"></iframe></div>
+    <div class="nav">
+      <button id="prev" aria-label="Página anterior">←</button>
+      <div><div class="count" id="count">1 / 8</div></div>
+      <button id="next" aria-label="Página siguiente">→</button>
+    </div>
+    <div class="dots" id="dots"></div>
+  </section>
+
+  <aside class="toc">
+    <h2>En esta edición</h2>
+    <ol id="toc"></ol>
+    <p class="note">Marca ficticia (Raíz Natural), creada como ejercicio de diseño editorial. Los productos, textos y fotos son ilustrativos.</p>
+  </aside>
+</main>
+
+<script>
+(function(){
+  var pages=[
+    ['01-portada','Portada'],['02-editorial','Editorial e índice'],['03-nota','La nota'],['04-calendario','Calendario de estación'],
+    ['05-receta-zapallo','Receta: crema de zapallo'],['06-habitos','Cinco hábitos de despensa'],['07-receta-legumbres','Receta: ensalada de legumbres'],['08-cierre','Cierre']
+  ];
+  var map={inicio:1,nota:3,calendario:4,'receta-zapallo':5,habitos:6,'receta-legumbres':7,despedida:8,proximo:8};
+  var i=0,frame=document.getElementById('frame'),count=document.getElementById('count'),
+      prev=document.getElementById('prev'),next=document.getElementById('next'),
+      dots=document.getElementById('dots'),toc=document.getElementById('toc');
+  pages.forEach(function(p,k){
+    var d=document.createElement('i');d.onclick=function(){go(k)};dots.appendChild(d);
+    var li=document.createElement('li');li.innerHTML='<a><span>'+String(k+1).padStart(2,'0')+'</span>'+p[1]+'</a>';
+    li.firstChild.onclick=function(){go(k)};toc.appendChild(li);
+  });
+  function go(n,noHash){
+    n=Math.max(0,Math.min(pages.length-1,n));i=n;
+    frame.classList.add('fade');
+    setTimeout(function(){frame.src='paginas/'+pages[n][0]+'.html';},120);
+    frame.onload=function(){frame.classList.remove('fade')};
+    count.textContent=(n+1)+' / '+pages.length;
+    prev.disabled=n===0;next.disabled=n===pages.length-1;
+    [].forEach.call(dots.children,function(d,k){d.className=k===n?'on':''});
+    [].forEach.call(toc.querySelectorAll('a'),function(a,k){a.className=k===n?'on':''});
+    if(!noHash)history.replaceState(null,'','#'+(n+1));
+  }
+  prev.onclick=function(){go(i-1)};next.onclick=function(){go(i+1)};
+  document.addEventListener('keydown',function(e){if(e.key==='ArrowRight')go(i+1);if(e.key==='ArrowLeft')go(i-1)});
+  window.addEventListener('message',function(e){var g=e.data&&e.data.raizGoto;if(g&&map[g])go(map[g]-1)});
+  var start=parseInt((location.hash||'').slice(1),10);
+  go(isNaN(start)?0:start-1,true);
+})();
+</script>
+</body>
+</html>

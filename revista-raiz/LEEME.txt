@@ -1,0 +1,24 @@
+REVISTA RAÍZ — EDICIÓN 01 (pieza de portfolio)
+
+QUÉ HAY EN ESTA CARPETA
+- index.html                  Visor de la revista (navegable en celular y escritorio).
+- Raiz-Edicion-01.pdf         Las 8 pantallas en un PDF descargable.
+- paginas/                    Las 8 pantallas en HTML + la versión newsletter (09).
+- css/ e img/                 Estilos y fotos locales (no dependen de enlaces externos).
+- preview/                    Imágenes JPG de cada pantalla + raiz-tarjeta-portfolio.jpg (portada para tu grilla).
+
+CÓMO SUMARLA A TU SITIO (Vercel)
+1. Copiá la carpeta "revista-raiz" a la raíz de tu proyecto, al lado de tu index.html.
+2. En tu portfolio, duplicá una tarjeta existente y cambiá:
+   - Imagen:    /revista-raiz/preview/raiz-tarjeta-portfolio.jpg
+   - Categoría: Diseño editorial
+   - Título:    Raíz — Revista digital, Edición 01
+   - Enlace:    /revista-raiz/   (con target="_blank" si querés que abra en pestaña nueva)
+3. Subí los cambios (git push o vercel --prod). La revista queda en:
+   https://nahuegnz.vercel.app/revista-raiz/
+
+PARA REVISAR ANTES DE PUBLICAR
+- La foto de la pantalla 2 (editorial) es provisoria: reutiliza la foto de la portada. Conviene generar otra en Stitch y reemplazar img/mesa.webp en esa pantalla.
+- Los colores de las pantallas no son 100% uniformes (Stitch generó paletas parecidas pero no idénticas). Unificarlos suma puntos de "sistema de marca".
+- Fuentes e íconos se cargan desde Google Fonts, por lo que necesitan internet (en tu sitio funciona normal).
+- El texto del visor dice que la base visual y las fotos se generaron con IA (Stitch). Editalo en index.html si lo querés contar distinto.

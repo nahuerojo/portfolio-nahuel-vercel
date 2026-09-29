@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>RAÍZ · Cierre (08 / 08)</title>
+<!-- Google Fonts Preconnect & Stylesheet -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&amp;family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+
+<!-- Tailwind Configuration -->
+
+<!-- Custom Styles: Visual Accents and Typography -->
+<style data-purpose="custom-enhancements">
+    /* Subtle film grain overlay to enhance the Kinfolk editorial atmosphere */
+    .grain-overlay {
+      background-image: radial-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 0);
+      background-size: 16px 16px;
+    }
+    /* Safe-area insets for modern mobile devices (iOS notch/home indicator) */
+    .safe-top {
+      padding-top: env(safe-area-inset-top, 16px);
+    }
+    .safe-bottom {
+      padding-bottom: env(safe-area-inset-bottom, 24px);
+    }
+  </style>
+<link rel="stylesheet" href="../css/08-cierre.css"/></head>
+<body class="h-full bg-[#112217] font-sans antialiased text-brand-cream selection:bg-brand-pumpkin selection:text-white flex justify-center items-center">
+<!-- Mobile Viewport Container (Target 390px, responsive within device bounds) -->
+<main class="relative w-full max-w-[390px] h-full min-h-[844px] max-h-[920px] bg-brand-dark overflow-hidden flex flex-col justify-between shadow-2xl">
+<!-- BEGIN: Atmospheric Background -->
+<div class="absolute inset-0 z-0 pointer-events-none" data-purpose="background-scenery">
+<!-- Background Table Image -->
+<img alt="Editorial autumn dining table seen from above in moody dark atmospheric evening lighting" class="w-full h-full object-cover object-center filter brightness-[0.78] contrast-[1.08] transform scale-[1.03]" src="../img/noche.webp"/>
+<!-- Deep Forest Green Duotone and Gradient Tint Overlays for Perfect Text Legibility -->
+<div class="absolute inset-0 bg-[#142A1B]/85 mix-blend-multiply"></div>
+<div class="absolute inset-0 bg-gradient-to-b from-[#112217]/95 via-[#142a1b]/70 to-[#0e1d13]/98"></div>
+<!-- Subtle Texture Grid -->
+<div class="absolute inset-0 grain-overlay opacity-30"></div>
+</div>
+<!-- END: Atmospheric Background -->
+<!-- BEGIN: TopHeader -->
+<header class="relative z-10 w-full flex flex-col safe-top" data-purpose="screen-header">
+<!-- Full-Width Progress Indicator Bar (100% Completed) -->
+<div class="w-full h-[3px] bg-brand-dark/40 overflow-hidden" data-purpose="magazine-progress-bar">
+<div class="h-full bg-gradient-to-r from-brand-ochre to-brand-pumpkin w-full shadow-[0_0_8px_rgba(217,119,36,0.6)]"></div>
+</div>
+<!-- Navigation & Issue Metadata -->
+<div class="px-6 pt-5 pb-2 flex items-center justify-between">
+<!-- Magazine Volume Tagline -->
+<div class="flex items-center space-x-2">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-brand-ochre animate-pulse"></span>
+<p class="text-[11px] uppercase tracking-[0.24em] font-medium text-brand-cream/80">
+            RAÍZ <span class="mx-1 text-brand-cream/40">•</span> OTOÑO 01
+          </p>
+</div>
+<!-- Issue Slide / Progress Badge -->
+<div class="flex items-center">
+<span class="inline-flex items-center px-2.5 py-1 rounded-full text-[10px] font-semibold tracking-wider text-brand-cream/90 bg-white/10 backdrop-blur-md border border-white/15 shadow-sm">
+            08 / 08
+          </span>
+</div>
+</div>
+</header>
+<!-- END: TopHeader -->
+<!-- BEGIN: Editorial Card / Central Block -->
+<section class="relative z-10 px-6 py-4 my-auto flex flex-col items-center text-center" data-purpose="main-editorial-message">
+<!-- Outer Glass Card for Editorial Contrast -->
+<div class="w-full py-9 px-6 rounded-2xl bg-[#0f2115]/55 backdrop-blur-md border border-white/10 shadow-[0_12px_40px_rgba(0,0,0,0.45)] flex flex-col items-center">
+<!-- Kicker Label with Botanical Icon -->
+<div class="inline-flex items-center space-x-2 mb-4 px-3 py-1 rounded-full bg-brand-pumpkin/10 border border-brand-pumpkin/20" data-purpose="editorial-kicker">
+<!-- Hand-crafted Autumn Leaf Icon SVG -->
+<svg class="w-3.5 h-3.5 text-brand-ochre fill-current" fill="none" stroke="currentColor" stroke-width="1.5" viewbox="0 0 24 24">
+<path d="M12 21c-4.5 0-9-4.5-9-10.5C3 5 7.5 3 12 3c4.5 0 9 2 9 7.5C21 16.5 16.5 21 12 21z" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M12 3v18M12 9c-2 1-4 3-4 5m4-2c2 1 4 3 4 5" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span class="text-[10px] uppercase tracking-[0.2em] font-semibold text-brand-ochre">
+            EDICIÓN 01 · CIERRE
+          </span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-serif text-[32px] leading-[1.22] font-normal text-brand-cream tracking-tight mb-4 max-w-[280px]">
+          Nos vemos en la próxima edición: <span class="italic font-medium text-white underline decoration-brand-ochre/40 decoration-1 underline-offset-4">invierno.</span>
+</h1>
+<!-- Subheading Description -->
+<p class="font-sans text-[14px] leading-relaxed text-brand-creamMuted/90 font-light max-w-[260px] mb-7">
+          Guardá esta revista y compartila con quien cocina con vos.
+        </p>
+<!-- Primary Action Button: Compartir -->
+<button aria-label="Compartir edición con quien cocina con vos" class="w-full max-w-[250px] py-3.5 px-6 rounded-full bg-gradient-to-r from-brand-pumpkin to-brand-ochre text-white font-medium text-[15px] tracking-wide shadow-lg shadow-brand-pumpkin/30 hover:brightness-110 active:scale-[0.98] transition-all duration-200 flex items-center justify-center space-x-2.5 group" data-purpose="share-action-button" type="button">
+<!-- Share Icon SVG -->
+<svg class="w-4 h-4 text-white/95 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24">
+<circle cx="18" cy="5" r="3"></circle>
+<circle cx="6" cy="12" r="3"></circle>
+<circle cx="18" cy="19" r="3"></circle>
+<line x1="8.59" x2="15.42" y1="13.51" y2="17.49"></line>
+<line x1="15.41" x2="8.59" y1="6.51" y2="10.49"></line>
+</svg>
+<span class="font-semibold tracking-wide">Compartir</span>
+</button>
+</div>
+</section>
+<!-- END: Editorial Card / Central Block -->
+<!-- BEGIN: Foot / Brand Identity -->
+<footer class="relative z-10 px-6 safe-bottom pb-8 pt-2 flex flex-col items-center text-center" data-purpose="magazine-footer">
+<!-- Delicate Botanical Divider Accent -->
+<div class="w-full max-w-[200px] flex items-center justify-center space-x-3 mb-5 opacity-40">
+<span class="h-[1px] w-full bg-gradient-to-r from-transparent via-brand-sage to-transparent"></span>
+<svg class="w-3 h-3 text-brand-sage flex-shrink-0" fill="currentColor" viewbox="0 0 24 24">
+<path d="M12 2L15 9H9L12 2zM12 22L9 15H15L12 22zM2 12L9 9V15L2 12zM22 12L15 15V9L22 12z"></path>
+</svg>
+<span class="h-[1px] w-full bg-gradient-to-r from-transparent via-brand-sage to-transparent"></span>
+</div>
+<!-- Brand Logo Wordmark -->
+<div class="mb-4" data-purpose="brand-wordmark">
+<span class="font-serif tracking-[0.35em] text-[22px] font-bold text-brand-cream uppercase pl-1 block drop-shadow-sm">
+          RAÍZ
+        </span>
+<span class="block text-[8px] font-sans tracking-[0.3em] uppercase text-brand-sage/80 mt-1 font-medium">
+          ALIMENTACIÓN DE ESTACIÓN
+        </span>
+</div>
+<!-- Navigation Link: Volver al inicio -->
+<a class="inline-flex items-center space-x-1.5 text-[12px] font-sans text-brand-cream/70 hover:text-white transition-colors py-1 group" data-purpose="restart-link" href="#inicio">
+<span class="transition-transform duration-200 group-hover:-translate-x-1 font-serif text-sm">←</span>
+<span class="tracking-wider uppercase text-[10px] font-medium border-b border-white/20 pb-0.5">Volver al inicio</span>
+</a>
+</footer>
+<!-- END: Foot / Brand Identity -->
+</main>
+<script>
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="#"]');if(!a)return;e.preventDefault();var h=a.getAttribute('href').slice(1);if(window.parent!==window&&h){window.parent.postMessage({raizGoto:h},'*');}});
+</script></body></html>
