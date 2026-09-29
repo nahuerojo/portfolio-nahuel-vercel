@@ -131,6 +131,20 @@
             </div>
           </article>
 
+          <!-- NUEVA TARJETA: Revista digital Raíz (abre el visor en /revista-raiz/) -->
+          <article class="project-card reveal" data-category="diseno">
+            <a href="revista-raiz/" class="project-media" data-external target="_blank" rel="noopener">
+              <img src="revista-raiz/preview/raiz-tarjeta-portfolio.jpg"
+                alt="Raíz — Revista digital, Edición 01: tres pantallas de la revista en celular" loading="lazy">
+              <span class="project-arrow">↗</span>
+            </a>
+            <div class="project-info">
+              <div><span class="project-cat">Diseño editorial · Contenido con IA</span>
+                <h3>Raíz — Revista digital, Edición 01</h3>
+              </div><span class="project-num">02</span>
+            </div>
+          </article>
+
           <article class="project-card reveal" data-category="ia">
             <a href="#" class="project-media" data-case="aurum-studio">
               <img src="assets/images/produccion/aurum-studio/01-hero.png" alt="AURUM Studio Wireless — hero"
@@ -140,7 +154,7 @@
             <div class="project-info">
               <div><span class="project-cat">Contenido con IA</span>
                 <h3>AURUM Studio Wireless</h3>
-              </div><span class="project-num">02</span>
+              </div><span class="project-num">03</span>
             </div>
           </article>
 
@@ -153,7 +167,7 @@
             <div class="project-info">
               <div><span class="project-cat">Diseño gráfico</span>
                 <h3>CaféLoop — Identidad & Campaña D2C</h3>
-              </div><span class="project-num">03</span>
+              </div><span class="project-num">04</span>
             </div>
 
           </article>
@@ -167,7 +181,7 @@
             <div class="project-info">
               <div><span class="project-cat">Video · Storytelling</span>
                 <h3>La noche que le ganamos a Inglaterra</h3>
-              </div><span class="project-num">04</span>
+              </div><span class="project-num">05</span>
             </div>
           </article>
 
@@ -181,7 +195,7 @@
             <div class="project-info">
               <div><span class="project-cat">Video · Comercial B2B</span>
                 <h3>CaféLoop — Spot Lanzamiento B2B</h3>
-              </div><span class="project-num">05</span>
+              </div><span class="project-num">06</span>
             </div>
           </article>
         </div>
@@ -286,6 +300,16 @@
       </div>
     </div>
   </div>
+
+  <!-- Links externos de tarjetas (p. ej. la revista Raíz): evita que script.js los trate como modales.
+       Tiene que ir ANTES de script.js. -->
+  <script>
+    document.addEventListener('click', function (e) {
+      var link = e.target.closest && e.target.closest('a[data-external]');
+      if (!link) return;
+      e.stopImmediatePropagation();
+    }, true);
+  </script>
   <script src="script.js"></script>
 </body>
 
